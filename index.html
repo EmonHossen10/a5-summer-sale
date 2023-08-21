@@ -36,7 +36,7 @@
     <!-- modal -->
     <!-- Open the modal using ID.showModal() method -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-72 mx-auto   lg:w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
                 <img src="./images/congo.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -78,7 +78,7 @@
                             </div>
                             </p>
                             <h2 id="name-1" class=" text-center font-bold">Pot</h2>
-                            <p class="  text-center "><span id="taka-1">60.00</span> TK</p>
+                            <p class="  text-center "><span id="taka-1">35.00</span> TK</p>
                         </div>
                     </div>
                     <div id="card-2" class="card w-64 bg-base-100 shadow-xl">
@@ -121,7 +121,8 @@
 
                         <input id="input-cupon" type="text" class="w-32 border " placeholder="Coupon code">
 
-                        <span><button id="apply" class="common-btn " disabled >Apply</button></span>
+                        <span><button onclick="couponApply()" id="apply" class="common-btn "
+                                disabled>Apply</button></span>
                     </div>
                     <div class="mt-5  bg-white  w-64 p-5 rounded-xl">
                         <!-- dynamic adding -->

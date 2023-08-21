@@ -16,7 +16,6 @@ document.getElementById("card-1").addEventListener("click", function () {
 
   // apply button validation -2
   const buttonApply = document.getElementById("apply");
-
   if (previousPriceNumber > 200) {
     buttonApply.removeAttribute("disabled");
   }
@@ -28,6 +27,9 @@ document.getElementById("card-1").addEventListener("click", function () {
   // set total price
   const totalPricePrevious = document.getElementById("total-id");
   const totalPrice = (totalPricePrevious.innerText = price);
+
+  // discount function
+  
 
   //   add product in a list
   const parent = document.querySelector("#parent-div");
