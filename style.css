@@ -1,0 +1,16 @@
+.sell-btn {
+  width: 156px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #e527b2;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+#header-section{
+    background-color:#F9F6E2 ;
+}
+.special-color{
+    color: #E527B2;
+}
