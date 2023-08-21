@@ -33,6 +33,25 @@
         </section>
     </header>
 
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img src="./images/congo.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-3xl font-bold">Congratulations</h2>
+                <p>Your Purchase the product</p>
+                <div class="card-actions">
+
+                    <form action="">
+                        <button class="common-btn2">Go Home</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <main>
         <!-- Kitchenware  -->
@@ -46,7 +65,7 @@
             <div class="  w-11/12 mx-auto  flex flex-col lg:flex-row">
                 <div class="grid grid-cols-1 md:gridcol-2 lg:grid-cols-3 flex-1 gap-4 lg:gap-0 ">
                     <!-- card 1 -->
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-1" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod1.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <p>
@@ -58,11 +77,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">Pot</h2>
-                            <p class="  text-center ">55.00 TK</p>
+                            <h2 id="name-1" class=" text-center font-bold">Pot</h2>
+                            <p class="  text-center "><span id="taka-1">60.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-2" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <p>
@@ -74,11 +93,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">salad Cutter</h2>
-                            <p class=" text-center  ">45.00 TK</p>
+                            <h2 id="name-2" class=" text-center font-bold">salad Cutter</h2>
+                            <p class=" text-center  "><span id="taka-2">100.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-3" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <p>
@@ -90,17 +109,38 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">cooker </h2>
-                            <p class=" text-center  " >89.00 TK</p>
+                            <h2 id="name-3" class=" text-center font-bold">cooker </h2>
+                            <p class=" text-center  "><span id="taka-3">35.00</span> TK</p>
                         </div>
                     </div>
                 </div>
-                <!-- cupon -->
+                <!-- coupon -->
                 <div class="mt-5 lg:mt-0">
-                    <div class="bg-red-300 h-28 w-64 p-5 rounded-xl bg-white">
-                        <h1 class="text-2xl">Have coupon?</h1>
-                        <input type="text" class="w-32 border " placeholder="Coupon code">
-                        <span><button class="common-btn  ">Apply</button></span>
+                    <div class="  h-28 w-64 p-5 rounded-xl bg-white">
+                        <h1 class="text-2xl mb-4 ">Have coupon?</h1>
+
+                        <input id="input-cupon" type="text" class="w-32 border " placeholder="Coupon code">
+
+                        <span><button id="apply" class="common-btn " disabled >Apply</button></span>
+                    </div>
+                    <div class="mt-5  bg-white  w-64 p-5 rounded-xl">
+                        <!-- dynamic adding -->
+                        <div id="parent-div">
+
+
+                        </div>
+                        <!--  hardcoded -->
+                        <hr>
+                        <div class="font-semibold mb-4">
+                            <p>Total Price : <span id="price-id">00</span> TK</p>
+                            <p>Discount : <span>00</span> TK</p>
+                            <p>Total : <span id="total-id">00</span> TK </p>
+                        </div>
+                        <hr>
+                        <button onclick="my_modal_5.showModal()" id="make-purchase" class="common-btn2  " disabled>Make
+                            Purchase</button>
+
+
                     </div>
                 </div>
             </div>
@@ -115,7 +155,7 @@
             <div class="  w-11/12 mx-auto  flex flex-col lg:flex-row">
                 <div class="grid grid-cols-1 md:gridcol-2 lg:grid-cols-3 gap-8 ">
                     <!-- card 1 -->
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-4" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod4.png" alt="Cap" /></figure>
                         <div class="card-body">
                             <p>
@@ -127,11 +167,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">Cap</h2>
-                            <p class=" text-center  " >22.00 TK</p>
+                            <h2 id="name-4" class=" text-center font-bold">Cap</h2>
+                            <p class=" text-center  "><span id="taka-4">60.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-5" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod5.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <p>
@@ -143,11 +183,11 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">Shirt </h2>
-                            <p class=" text-center  " >50.00 TK</p>
+                            <h2 id="name-5" class=" text-center font-bold">Shirt </h2>
+                            <p class=" text-center  "><span id="taka-5">50.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card w-64 bg-base-100 shadow-xl">
+                    <div id="card-6" class="card w-64 bg-base-100 shadow-xl">
                         <figure class="bg-gray-200"><img src="./images/prod6.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <p>
@@ -159,15 +199,13 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             </p>
-                            <h2 class=" text-center font-bold">Shoe </h2>
-                            <p class=" text-center  " >100.00 TK</p>
+                            <h2 id="name-6" class=" text-center font-bold">Shoe </h2>
+                            <p class=" text-center  "> <span id="taka-6">100.00</span> TK</p>
                         </div>
                     </div>
                 </div>
                 <!-- cupon -->
                 <div>
-
-
                 </div>
             </div>
 
@@ -177,7 +215,10 @@
         </section>
 
     </main>
+    <!-- js files -->
 
+
+    <script src="./js files/utilities.js"></script>
     <script src="./js files/index.js"></script>
 </body>
 
