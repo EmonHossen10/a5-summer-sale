@@ -28,9 +28,6 @@ document.getElementById("card-1").addEventListener("click", function () {
   const totalPricePrevious = document.getElementById("total-id");
   const totalPrice = (totalPricePrevious.innerText = price);
 
-  // discount function
-  
-
   //   add product in a list
   const parent = document.querySelector("#parent-div");
   const p = document.createElement("p");

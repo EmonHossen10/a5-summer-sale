@@ -7,5 +7,13 @@ function getPrice(id) {
 }
 
 function couponApply(){
-    console.log("ok")
+   const input=document.getElementById("input-cupon").value;
+   if(input==="SELL200"){
+    function giveDiscount(t){
+        console.log(t)
+    }
+   }
+   else{
+    alert("please Give valid Coupon Code !!!!!!!!!!")
+   }
 }
